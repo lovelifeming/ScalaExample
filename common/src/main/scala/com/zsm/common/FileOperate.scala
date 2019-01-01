@@ -1,4 +1,4 @@
-package com.zsm
+package com.zsm.common
 
 import java.io.{File, PrintWriter}
 
@@ -10,11 +10,12 @@ import scala.io.Source
   * @Date:Created in 2019-01-01.
   * @Modified By: 
   */
-object Main {
-  val path:String="C:\\Users\\Administrator\\Desktop\\移动\\S1U-103-2018111705-109-0.txt";
+object FileOperate {
+
   def main(args: Array[String]): Unit = {
 
     val writer = new PrintWriter(new File("C:\\Users\\Administrator\\Desktop\\移动\\result.txt"))
+    val path:String="C:\\Users\\Administrator\\Desktop\\移动\\S1U-103-2018111705-109-0.txt";
 
     val data=Source.fromFile(path);
     val lines=data.getLines();
